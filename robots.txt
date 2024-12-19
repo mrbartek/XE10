@@ -1,9 +1,0 @@
-User-agent: *
-
-Allow: /sitemap.xml
-
-# disallow file and folders
-Disallow: /*.xsd$
-Disallow: /*.xslt$
-Disallow: /xml/
-Disallow: /components/

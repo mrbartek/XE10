@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <model>
-	<modelname>LAND CRUISER STATION WAGON</modelname>
+	<modelname>Lexus IS200/IS300</modelname>
 	<modelcode>
-		<item>UZJ100 series</item>
-		<item>FZJ100, 105 series</item>
-		<item>HZJ105 series</item>
-		<item>HDJ100 series</item>
+		<item>GXE10</item>
+		<item>JCE10</item>
 	</modelcode>
-	<copyrightyear>1992-2004</copyrightyear>
+	<copyrightyear>1992-2024 Mr_Bartek</copyrightyear>
 </model>

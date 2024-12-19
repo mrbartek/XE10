@@ -15,7 +15,7 @@ function document_onload_overall() {
 	if( window.location.search != "" ){
 		code = getParam(window.location.search, "code");
 		path = getParam(window.location.search, "path");
-		setPDF( path + "overall/" + code );
+		setPDF( path + code );
 	}
 }
   
