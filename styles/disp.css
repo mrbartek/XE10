@@ -48,7 +48,7 @@ body.main {
 
 body.bg01 {
   background-color:#ffffff;
-  background-image: url(/images/back_a.jpg);
+  background-image: url(images/back_a.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
