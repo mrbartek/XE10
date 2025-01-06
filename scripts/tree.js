@@ -18,8 +18,8 @@ async function init(){
     rImg=new Array("../images/tg1.gif","../images/tg2.gif");
     
     document.write("<span class='TopItem' onclick='AllClose()'><font style='font-size:11pt;'>");
-    document.write("<p id='Ttree'></p><br>");
-    document.write("</font></span><br>"); 
+    document.write("<p id='Ttree'></p>");
+    document.write("</font></span>"); 
     
     document.write("<p id='Ttree2'></p>");
   
