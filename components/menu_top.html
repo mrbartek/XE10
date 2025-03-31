@@ -6,9 +6,11 @@
   <link rel="stylesheet" type="text/css" href="../styles/disp.css">
   <script src="../scripts/xml.js"></script>
    <script>
-     var sound = new Audio('../sounds/papaj.mp3');
+     var snd1 = new Audio('../sounds/1.mp3');
+	 var snd2 = new Audio('../sounds/2.mp3');
+	 var sndSelected = Math.random() < 0.5 ? snd1 : snd2;
      function gogoPapaj() {
-         sound.play();
+         sndSelected.play();
      }
  </script>
   <TITLE id="menuTop"></TITLE>
