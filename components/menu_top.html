@@ -8,9 +8,10 @@
    <script>
      var snd1 = new Audio('../sounds/1.mp3');
 	 var snd2 = new Audio('../sounds/2.mp3');
-	 var sndSelected = Math.random() < 0.5 ? snd1 : snd2;
-     function gogoPapaj() {
+	 var sndSelected = Math.random() < 0.7 ? snd1 : snd2;
+     function playSnd() {
          sndSelected.play();
+		 sndSelected = Math.random() < 0.7 ? snd1 : snd2;
      }
  </script>
   <TITLE id="menuTop"></TITLE>
@@ -24,7 +25,7 @@
   <TABLE height="100%" width="100%" border="0" cellpadding="0" cellspacing="0">
     <TBODY>
       <TR>
-			<TD valign="middle" align="center"><a onclick="gogoPapaj();"><IMG src="../images/logo.gif" width="170" height="30"></a></TD>
+			<TD valign="middle" align="center"><a onclick="playSnd();"><IMG src="../images/logo.gif" width="170" height="30"></a></TD>
       </TR>
       <TR>
         <TD class="sepabtm"></TD>
