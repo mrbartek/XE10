@@ -22,10 +22,11 @@ async function init(){
     document.write("</font></span>"); 
     
     document.write("<p id='Ttree2'></p>");
-  
+	
     GetModelName("Ttree");
-  
-    var xmlFile="../xml/pdf.xml";
+	
+	var xmlFile="../xml/pdf.xml";
+
     let xmlDoc = await loadXML(xmlFile);
     HomePath="";
     try {
