@@ -19,9 +19,11 @@
 	{
 		nID = "id" + idSel;
 		if( bSelectedID != "" ){
-			document.all(bSelectedID).className = "item";
+			var prevElement = document.getElementById(bSelectedID);
+			if (prevElement) prevElement.className = "item";
 		}
-		document.all(nID).className = "selectedItem";
+		var newElement = document.getElementById(nID);
+		if (newElement) newElement.className = "selectedItem";
 		bSelectedID = nID;
 	}
 
@@ -35,18 +37,14 @@
 	}
 
 	function selectTree(id){
-		var destObj;
-		if( document.all )
-			destObj = document.all;
-		else if( document.getElementById )
-			destObj = document.getElementById;
-		else
-			return;
-		if(destObj(id).style.display == "block"){
-			destObj(id).style.display = "none";
+		var destObj = document.getElementById(id);
+		if (!destObj) return;
+		
+		if(destObj.style.display == "block"){
+			destObj.style.display = "none";
 		}
-		else if(destObj(id).style.display == "none"){
-			destObj(id).style.display = "block";
+		else if(destObj.style.display == "none"){
+			destObj.style.display = "block";
 		}
 	}
 -->
