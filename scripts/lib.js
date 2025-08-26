@@ -115,3 +115,10 @@ function setPDF(url) {
 function getPageArray() {
 	return arrayPage; 
 }
+
+function getBaseUrl() 
+{
+	var url = document.URL;
+	var baseUrl = url.split("/components/")[0];
+	return baseUrl;
+}

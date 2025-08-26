@@ -34,12 +34,14 @@ function showLocation(){
 
 function showLocationList(){
 	const path = getFilePath(getCurrentPDFName(), 3); // levels up from m_overall/overall/
-	openSubWnd( "/components/ewd_loclist.html?path=" + path, "ewd_sub" );
+	const baseUrl = getBaseUrl();
+	openSubWnd(baseUrl + "/components/ewd_loclist.html?path=" + path, "ewd_sub" );
 }
 
 function showConnectorList(){
 	const path = getFilePath(getCurrentPDFName(), 3); // levels up from m_overall/overall/
-	openSubWnd( "/components/ewd_connlist.html?path=" + path, "ewd_sub" );
+	const baseUrl = getBaseUrl();
+	openSubWnd(baseUrl + "/components/ewd_connlist.html?path=" + path, "ewd_sub" );
 }
 
 
@@ -85,3 +87,4 @@ function mouseOut_btn(id)
 {
 	document.all(id).className = "button";
 }
+
