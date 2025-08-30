@@ -1,6 +1,7 @@
 BODY{
   background-color: #D4D0C8;
   font-family: Arial;
+  height: 0;
 }
 
 div.itemList{

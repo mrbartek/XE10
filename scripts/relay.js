@@ -231,7 +231,7 @@ function getPageNode(nPage)
 	var list =  getPageList();
 	if( list == null ){
 		console.log("page Node info not found.  Page: " + nPage);
-		alert("page info not found");
+		//alert("page info not found");
 		return null;
 	}
 	// pageNodeList = list.getElementsByTagName("PageList/page");

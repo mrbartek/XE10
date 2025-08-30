@@ -244,13 +244,13 @@ function getPageNode(nPage)
 {
 	var list = getPageList();
 	if( list == null ){
-		alert("page info not found");
+		////alert("page info not found");
 		return null;
 	}
 
 	pageNodeList = list.getElementsByTagName("PageList/page");
 	if( pageNodeList == null ){
-		alert("page info not found");
+		////alert("page info not found");
 		return null;
 	}
 

@@ -102,13 +102,13 @@ function setPageInfo(nPage)
 
 	var list = getPageList();
 	if( list == null ){
-		alert("page info not found");
+		////alert("page info not found");
 		return;
 	}
 
 	pageNodeList = list.getElementsByTagName("PageList/page");
 	if( pageNodeList == null ){
-		alert("page info not found");
+		////alert("page info not found");
 		return;
 	}
 
