@@ -33,9 +33,8 @@ function showLocation(){
 }
 
 function showLocationList(){
-	const pattern = /(ewd368e|ewd452e|sb031w|sb080w|sb097w)/i;
 	var path = getFilePath(getCurrentPDFName(), 3);
-	if (!pattern.test(path)) {
+	if (path.endsWith("/ewd/")) {
 		path = getFilePath(getCurrentPDFName(), 2); // levels up from m_overall/overall/
 	}
 	const baseUrl = getBaseUrl();
@@ -43,9 +42,8 @@ function showLocationList(){
 }
 
 function showConnectorList(){
-	const pattern = /(ewd368e|ewd452e|sb031w|sb080w|sb097w)/i;
 	var path = getFilePath(getCurrentPDFName(), 3);
-	if (!pattern.test(path)) {
+	if (path.endsWith("/ewd/")) {
 		path = getFilePath(getCurrentPDFName(), 2); // levels up from m_overall/overall/
 	}
 	const baseUrl = getBaseUrl();
