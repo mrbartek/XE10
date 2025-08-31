@@ -33,13 +33,21 @@ function showLocation(){
 }
 
 function showLocationList(){
-	const path = getFilePath(getCurrentPDFName(), 3); // levels up from m_overall/overall/
+	const pattern = /(ewd368e|ewd452e|sb031w|sb080w|sb097w)/i;
+	var path = getFilePath(getCurrentPDFName(), 3);
+	if (!pattern.test(path)) {
+		path = getFilePath(getCurrentPDFName(), 2); // levels up from m_overall/overall/
+	}
 	const baseUrl = getBaseUrl();
 	openSubWnd(baseUrl + "/components/ewd_loclist.html?path=" + path, "ewd_sub" );
 }
 
 function showConnectorList(){
-	const path = getFilePath(getCurrentPDFName(), 3); // levels up from m_overall/overall/
+	const pattern = /(ewd368e|ewd452e|sb031w|sb080w|sb097w)/i;
+	var path = getFilePath(getCurrentPDFName(), 3);
+	if (!pattern.test(path)) {
+		path = getFilePath(getCurrentPDFName(), 2); // levels up from m_overall/overall/
+	}
 	const baseUrl = getBaseUrl();
 	openSubWnd(baseUrl + "/components/ewd_connlist.html?path=" + path, "ewd_sub" );
 }
