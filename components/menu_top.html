@@ -34,6 +34,33 @@ function playSnd() {
     console.log(sndSelected);
     sndSelected.play();
 }
+
+var barka = new Audio('../sounds/Barka.mp3'); // Barka.mp3
+
+function schedule2137() {
+    var now = new Date();
+
+    var target = new Date();
+    target.setHours(21, 37, 0, 0);
+
+    if (target <= now) {
+        target.setDate(target.getDate() + 1);
+    }
+
+    var delay = target.getTime() - now.getTime();
+
+    setTimeout(function () {
+        barka.currentTime = 0; // restart from beginning
+        barka.play();
+
+        console.log("Played Barka.mp3 at 21:37");
+
+        schedule2137(); // schedule again for tomorrow
+    }, delay);
+}
+
+// Start the daily scheduler
+schedule2137();
  </script>
   <TITLE id="menuTop"></TITLE>
   <script>
