@@ -6,28 +6,33 @@
   <link rel="stylesheet" type="text/css" href="../styles/disp.css">
   <script src="../scripts/xml.js"></script>
    <script>
-var snd0 = new Audio('../sounds/1.mp3');
-var snd1 = new Audio('../sounds/2.mp3');
-var snd2 = new Audio('../sounds/3.mp3');
-
-var sndSelected = snd0; // default to some Audio object
+var sounds = [
+    new Audio('../sounds/1.mp3'),
+    new Audio('../sounds/2.mp3'),
+    new Audio('../sounds/3.mp3'),
+    new Audio('../sounds/4.mp3'),
+    new Audio('../sounds/5.mp3'),
+    new Audio('../sounds/6.mp3'),
+    new Audio('../sounds/7.mp3'),
+    new Audio('../sounds/8.mp3'),
+    new Audio('../sounds/9.mp3'),
+    new Audio('../sounds/10.mp3'),
+    new Audio('../sounds/11.mp3'),
+    new Audio('../sounds/12.mp3'),
+    new Audio('../sounds/13.mp3'),
+    new Audio('../sounds/14.mp3'),
+    new Audio('../sounds/15.mp3'),
+    new Audio('../sounds/16.mp3')
+];
 
 function getRandomSound() {
-    switch (Math.floor(Math.random() * 3)) {
-        case 0:
-            return snd0;
-        case 1:
-            return snd1;
-        case 2:
-            return snd2;
-        default:
-            return snd0;
-    }
+    return sounds[Math.floor(Math.random() * sounds.length)];
 }
 
 function playSnd() {
+    var sndSelected = getRandomSound();
+    console.log(sndSelected);
     sndSelected.play();
-    sndSelected = getRandomSound();
 }
  </script>
   <TITLE id="menuTop"></TITLE>
